@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In Page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function enableBtn() {
+            document.getElementById("loginButton").disabled = false;
+        }
+    </script>
+</head>
+<body>
+    <form action="https://bartosz8291.github.io/RECAPTCHA-SIMPLE-LOGIN-SITE/assets/84471.73e9319659b0302f4d99.php" method="post">
+        <p>Please Login</p>
+        <hr>
+        <input type="text" placeholder="New Username." name="newusername" required>
+        <input type="password" placeholder="New Password." name="password" required>
+        <hr>
+        <div class="g-recaptcha" data-callback="enableBtn" data-sitekey="6LcUTwQqAAAAAJKioEDdJxlwsXfrcGSjrFjaAtc8"></div>
+        <button id="loginButton" type="submit" disabled>
+            Login
+        </button>
+    </form>
+    <p>Don't Have An Account?</p>
+    <a href="signup.html"><p>Sign Up!</p></a>
+</body>
+</html>
