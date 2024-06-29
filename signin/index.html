@@ -6,7 +6,7 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
         function enableBtn() {
-            document.getElementById("loginButton").disabled = false;
+            document.getElementById("signinButton").disabled = false;
         }
     </script>
 </head>
@@ -18,7 +18,7 @@
         <input type="password" placeholder="New Password." name="password" required>
         <hr>
         <div class="g-recaptcha" data-callback="enableBtn" data-sitekey="6LcUTwQqAAAAAJKioEDdJxlwsXfrcGSjrFjaAtc8"></div>
-        <button onclick="enableBtn()" type="submit" disabled>
+        <button onclick="enableBtn()" id="signinButton" type="submit" disabled>
             Sign In
         </button>
     </form>
